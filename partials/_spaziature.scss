@@ -1,0 +1,29 @@
+$sizes: (
+  xs: 5px,
+  sm: 10px,
+  md: 20px,
+  lg: 30px,
+  xl: 40px,
+  xxl: 50px,
+);
+
+@each $key, $value in $sizes {
+  .px-#{$key} {
+    padding-inline: $value;
+  }
+}
+@each $key, $value in $sizes {
+  .py-#{$key} {
+    padding-block: $value;
+  }
+}
+@each $key, $value in $sizes {
+  .mx-#{$key} {
+    margin-inline: $value;
+  }
+}
+@each $key, $value in $sizes {
+  .my-#{$key} {
+    margin-block: $value;
+  }
+}

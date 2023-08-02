@@ -1,0 +1,54 @@
+@import "./partials/colori";
+@import "./partials/font";
+@import "./partials/spaziature";
+@import "./partials/mixing";
+@import "./partials/bottoni";
+@import "./partials/reset";
+
+header {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+main {
+  .hero {
+    padding: 20px;
+    background-color: $bg-hero;
+    display: flex;
+    img {
+      width: 450px;
+      margin-left: 10px;
+      @include floating($border: 2px solid withe);
+      @include fade-in(hero, 4s, 0s);
+    }
+    div {
+      @include fade-in(hero, 4s, 0s);
+      h1 {
+        @include title-big(50px);
+      }
+    }
+  }
+  section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      @include floating(10px, $border: none);
+      width: 250px;
+    }
+  }
+}

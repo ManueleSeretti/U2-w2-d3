@@ -1,0 +1,34 @@
+@mixin floating($border-radius: 6px, $box: 0px 5px 10px, $border: 1px solid black) {
+  border-radius: $border-radius;
+  box-shadow: $box;
+  border: $border;
+}
+
+@mixin fade-in($name, $duration, $delay) {
+  animation: $name $duration $delay linear;
+}
+
+@keyframes hero {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
